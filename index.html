@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mila - Vestindo com estilo</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="img/logo-mila.png" alt="Logo da Mila" class="logo">
+    <p class="slogan">Vestindo com estilo.</p>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#sobre">Sobre</a>
+      <button id="abrir-carrinho">Carrinho (<span id="quantidade-carrinho">0</span>)</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="inicio">
+      <button id="anterior" class="seta" aria-label="Imagem anterior">❮</button>
+      <div>
+        <h1>Moda para todas as idades</h1>
+        <p>Qualidade, estilo e conforto em um só lugar.</p>
+        <a href="#catalogo" class="botao">Confira nosso catálogo</a>
+      </div>
+      <img id="imagem-destaque" src="img/camiseta-masculina.jpg" alt="Produto em destaque">
+      <button id="proximo" class="seta" aria-label="Próxima imagem">❯</button>
+    </section>
+
+    <section id="catalogo">
+      <h2>Nosso catálogo</h2>
+      <p>Escolha uma categoria para ver os produtos.</p>
+      <div class="filtros">
+        <button class="filtro selecionado" data-categoria="Masculino">Masculino</button>
+        <button class="filtro" data-categoria="Feminino">Feminino</button>
+        <button class="filtro" data-categoria="Infantil">Infantil</button>
+      </div>
+      <div id="lista-produtos" class="produtos"></div>
+    </section>
+
+    <section id="sobre" class="sobre">
+      <h2>Sobre a Mila</h2>
+      <p>A Mila apresenta opções de roupas para diferentes estilos e idades.</p>
+      <p>Escolha seus produtos e envie sua seleção para nossa equipe de atendimento.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Mila - Vestindo com estilo.</p>
+  </footer>
+
+  <section id="carrinho" class="carrinho escondido">
+    <div class="topo-carrinho">
+      <h2>Meu carrinho</h2>
+      <button id="fechar-carrinho">Fechar</button>
+    </div>
+    <div id="itens-carrinho"></div>
+    <p class="total">Total: <strong id="valor-total">R$ 0,00</strong></p>
+    <p class="aviso">Preços ilustrativos para o projeto escolar.</p>
+    <button id="finalizar" class="botao" disabled>Continuar pelo WhatsApp</button>
+    <p id="mensagem" role="status"></p>
+  </section>
+</body>
+</html>
