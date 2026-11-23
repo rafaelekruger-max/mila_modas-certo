@@ -1,26 +1,30 @@
-# Mila — Vestindo com estilo
+# Mila Modas — Projeto escolar
 
-Projeto escolar demonstrativo feito com HTML, CSS e JavaScript.
+Site simples feito com HTML, CSS e JavaScript.
 
-## Como testar
-1. Extraia a pasta.
-2. Abra o arquivo `index.html` no navegador.
-3. Escolha Masculino, Feminino ou Infantil.
-4. Adicione produtos ao carrinho e altere quantidades.
-5. Clique em continuar pelo WhatsApp para abrir a mensagem de pedido.
+## Como abrir
+1. Extraia a pasta do arquivo ZIP.
+2. Abra `index.html` no navegador.
+3. Escolha uma categoria e adicione produtos ao carrinho.
+4. Teste os botões de quantidade e o cálculo do total.
 
-## Arquivos
-- `index.html`: estrutura da página.
-- `css/style.css`: cores, tamanhos e organização.
-- `js/script.js`: produtos, filtros, carrinho, cálculo e WhatsApp.
-- `img/`: logotipo fornecido e imagens demonstrativas.
+## Organização dos arquivos
+- `index.html`: conteúdo da página.
+- `css/style.css`: aparência do site.
+- `js/script.js`: funcionamento dos filtros, imagens e carrinho.
+- `img/`: logotipo original enviado e imagens demonstrativas dos produtos.
 
-## Observações
-- Os preços são fictícios e foram usados somente para demonstrar o funcionamento do carrinho.
-- As imagens de produtos são imagens demonstrativas geradas com auxílio de IA; não representam necessariamente o estoque da Mila.
-- O logotipo foi fornecido pelo responsável pelo projeto.
-- O desenvolvimento recebeu auxílio de inteligência artificial; o estudante deve revisar e compreender o código antes da apresentação.
-- Número de WhatsApp informado: (47) 93437-1198. Teste o número antes de publicar.
+## Observações do projeto
+- O logotipo utilizado é o arquivo enviado para o projeto, sem criação de uma nova marca.
+- Os 15 produtos e seus preços são exemplos para demonstrar o catálogo e o cálculo.
+- As imagens de roupas são ilustrativas e foram geradas com auxílio de inteligência artificial; não confirmam a disponibilidade desses produtos na loja.
+- Houve auxílio de inteligência artificial na elaboração inicial do código. O estudante deve revisar, testar e compreender o funcionamento antes de apresentar o trabalho.
+- O número de WhatsApp usado no exemplo é (47) 93437-1198. É necessário confirmar se está correto antes de divulgar o site.
 
-## Conceitos utilizados
-Variáveis, arrays, objetos, funções, condicionais, repetição, eventos, filtros, cálculos e tratamento simples de erros.
+## Recursos implementados
+- Três categorias com cinco produtos cada.
+- Imagem de destaque que muda automaticamente e pelos botões.
+- Carrinho com adição, remoção e alteração de quantidade.
+- Cálculo do valor total.
+- Verificação simples de erros.
+- Layout adaptado para telas menores.
