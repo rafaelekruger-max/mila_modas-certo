@@ -19,7 +19,6 @@ const produtos = [
 
 // Carrinho: guarda o código do produto e a quantidade escolhida.
 let carrinho = [];
-let imagemAtual = 0;
 
 // Mostra os produtos da categoria escolhida.
 function mostrarProdutos(categoria) {
@@ -104,21 +103,6 @@ function removerProduto(id) {
   atualizarCarrinho();
 }
 
-// Alterna a imagem principal entre os produtos do catálogo.
-function trocarImagem(direcao) {
-  imagemAtual += direcao;
-  if (imagemAtual >= produtos.length) imagemAtual = 0;
-  if (imagemAtual < 0) imagemAtual = produtos.length - 1;
-
-  document.getElementById("imagem-destaque").src = produtos[imagemAtual].imagem;
-  document.getElementById("imagem-destaque").alt = produtos[imagemAtual].nome;
-}
-
-// Troca a imagem automaticamente a cada quatro segundos.
-setInterval(function() {
-  trocarImagem(1);
-}, 4000);
-
 // Eventos dos filtros.
 document.querySelectorAll(".filtro").forEach(function(botao) {
   botao.addEventListener("click", function() {
@@ -128,9 +112,7 @@ document.querySelectorAll(".filtro").forEach(function(botao) {
   });
 });
 
-// Botões da imagem principal e do carrinho.
-document.getElementById("anterior").addEventListener("click", () => trocarImagem(-1));
-document.getElementById("proximo").addEventListener("click", () => trocarImagem(1));
+// Botões do carrinho.
 document.getElementById("abrir-carrinho").addEventListener("click", function() {
   document.getElementById("carrinho").classList.remove("escondido");
 });
