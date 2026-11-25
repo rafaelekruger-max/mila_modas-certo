@@ -45,30 +45,14 @@ nav a, nav button {
 .inicio {
   width: 90%;
   margin: 20px auto;
-  padding: 15px;
+  padding: 25px 15px;
+  box-sizing: border-box;
   background: #f5f5f5;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  gap: 10px;
+  text-align: center;
 }
 
-.inicio div { width: 45%; }
+.inicio div { width: 100%; }
 .inicio h2 { font-size: 26px; }
-#imagem-destaque {
-  width: 35%;
-  height: 190px;
-  object-fit: contain;
-  background: white;
-}
-
-.seta {
-  padding: 8px;
-  background: #e87519;
-  color: white;
-  border: 0;
-  cursor: pointer;
-}
 
 .botao {
   display: inline-block;
@@ -165,9 +149,6 @@ footer {
 #finalizar:disabled { opacity: 0.5; }
 
 @media (max-width: 650px) {
-  .inicio { flex-wrap: wrap; }
-  .inicio div { width: 90%; }
-  #imagem-destaque { width: 70%; }
   .produtos { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 400px) {
